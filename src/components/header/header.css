@@ -1,0 +1,20 @@
+.header {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header a {
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
