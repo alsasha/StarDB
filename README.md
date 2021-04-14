@@ -1,4 +1,4 @@
-# Star DB (training project)
+# Star DB React (training project)
 
 ### What the project looks like
 
