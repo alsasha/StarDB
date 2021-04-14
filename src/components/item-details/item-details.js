@@ -61,6 +61,9 @@ export default class ItemDetails extends Component {
     })
     const { itemId, getItem } = this.props;
     if (!itemId) {
+      this.setState({
+        isLoading: false,
+      })
       return;
     }
     getItem(itemId)
@@ -77,7 +80,7 @@ export default class ItemDetails extends Component {
   render() {
     const { item, isLoading, isError, image } = this.state;
 
-    if (!item && !isLoading) {
+    if (!item && !isLoading && !isError) {
       return <span>Select a person from list</span>
     }
 
